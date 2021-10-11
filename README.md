@@ -1,6 +1,8 @@
 # Programming-exercises
 Solving 20 programming exercises daily with python
 
+# Forked from [Mykeels](https://github.com/mykeels/20-questions)
+
 # 20 Questions
 
 As per [this blog post](https://medium.com/@mykeels/20-questions-a047fa9d3856), I hope to provide 20 questions for beginners, and intermediate programmers, that will help in achieving some level of confidence in skills with programming languages and frameworks.
@@ -204,4 +206,3 @@ Let the user input either `yes` or `no`.
 
 Write a love calculator program that calculates a love percentage, using two names. [See More](./programming/20-love-calculator.md).
 
-#### Forked from [Mykeels](https://github.com/mykeels/20-questions)
