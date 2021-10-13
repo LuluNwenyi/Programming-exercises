@@ -6,27 +6,20 @@
 import json
 import requests
 
-print("Welcome! Type out the following word in reverse.")
+print("Welcome!")
 
 def get_random_word():
     word_url = requests.get("https://random-word-api.herokuapp.com//word?number=1").text
-    word = json.loads(word_url)
-    global reversed_word 
-    reversed_word = word[0][::-1]
-    return word
+    words = json.loads(word_url) 
+    return words[0]
 
-
-input_word = print(get_random_word())
-reverse = input("Type out the word in reverse: ")
-
-def check_input():
-
-    reverse_lower = reverse.lower()
-    reversed_word_lower = reversed_word.lower()
-    if reverse_lower == reversed_word_lower:
-        print ('✅')
-    else:
-        print ('❌')
 
 if __name__ == '__main__':
-    check_input()
+
+	random_word = get_random_word()
+	user_input = input(f"Type out the word \"{random_word}\" in reverse: ")
+
+	if random_word[::-1] == user_input:
+		print('✅')
+	else:
+		print ('❌')
